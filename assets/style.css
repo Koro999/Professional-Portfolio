@@ -6,13 +6,13 @@
 }
 
 body{
-    background-color: rgb(217, 213, 213); /*sets the bg color of the webpage*/
+    background-color: rgb(28, 28, 28); /*sets the bg color of the webpage*/
     /*padding: 150px 0 0; sets the start of the body */
 }
 
 li, a, a:visited , a:link, a:active{
     text-decoration: none;
-    color: #6b6e70;
+    color: var(--main-nav-footer-colors);
     font-size: 14px;
 }
 
@@ -50,9 +50,9 @@ li, a, a:visited , a:link, a:active{
 main {
     display: flex;
     flex-direction: column;
-    background-color: rgb(28, 28, 28);
     padding: 10px 10%;
     color: rgb(230, 230, 230);
+    position:relative; 
 }
 
 main h1, h2 {
@@ -62,13 +62,59 @@ main h1, h2 {
 }
 main h2 {
     font-weight: lighter;
+    bottom: 50px;
+    
 }
 
 main summary {
     border: 20px;
     padding: 20px;
-    margin-top: 200px;
-    width: 20%;
+    margin-top: 500px;
+    width: 30%;
     margin-left: auto;
     list-style: none;
 }
+
+footer {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--main-nav-footer-colors);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer span {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 2%;
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    justify-content: center ;
+    text-align: center;
+}
+
+footer span img {
+    max-width: 50%;
+    height: auto;
+}
+
+footer span img:hover {
+    filter: invert(1);
+}
+
+/*.socialMedia figure {
+}
+
+
+.socialMedia ul li {
+    padding-right: 30px;
+    display: inline-block;
+    border: 30px;
+    
+}*/
