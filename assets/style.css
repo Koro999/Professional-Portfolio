@@ -1,0 +1,74 @@
+*{ /* Fixed text across the whole document */
+    font-family: 'Roboto', Calibri, 'Verdana', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+body{
+    background-color: rgb(217, 213, 213); /*sets the bg color of the webpage*/
+    /*padding: 150px 0 0; sets the start of the body */
+}
+
+li, a, a:visited , a:link, a:active{
+    text-decoration: none;
+    color: #6b6e70;
+    font-size: 14px;
+}
+
+.header{ /*header has been fixed to the top of the page, 3 links */
+    display: flex;
+    background-color: black;
+    justify-content: space-between ;
+    padding: 20px 10%;
+}
+
+.navLinks {
+    list-style: none;    
+}
+
+.header nav ul li {
+    padding-right: 30px;
+    display: inline-block;
+    border: 30px;
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.navLinks li a:hover {
+    color: black;
+    background-color: white;   
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(28, 28, 28);
+    padding: 10px 10%;
+    color: rgb(230, 230, 230);
+}
+
+main h1, h2 {
+    padding-top: 0px;
+    border: 0px;
+    margin: 0px;
+}
+main h2 {
+    font-weight: lighter;
+}
+
+main summary {
+    border: 20px;
+    padding: 20px;
+    margin-top: 200px;
+    width: 20%;
+    margin-left: auto;
+    list-style: none;
+}
