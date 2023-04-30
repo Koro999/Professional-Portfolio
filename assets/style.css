@@ -1,0 +1,218 @@
+*{ /* Fixed text across the whole document */
+    font-family: 'Roboto', Calibri, 'Verdana', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+html, body{
+    background-color: rgb(16, 16, 16);
+    height: 100%; /*sets the bg color of the webpage*/
+    /*padding: 150px 0 0; sets the start of the body */
+}
+body {
+    background-image: url(/assets/images/Abstract_Texture_Set_v1/Metal_tex3.1.jpg);
+}
+
+li, a, a:visited , a:link, a:active{
+    text-decoration: none;
+    color: var(--main-nav-footer-colors);
+    font-size: 14px;
+}
+
+.header{ /*header has been fixed to the top of the page, 3 links */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: right;
+    width: 100%;
+    padding: 20px 10%;
+    height: auto;
+    max-height: 200px;
+}
+
+.navLinks {
+    list-style: none;
+    z-index: 9999;
+    padding: 0px;
+    border: 0px;
+}
+
+.header nav ul li {
+    padding-right: 30px;
+    display: flex;
+    display: inline-block;
+    border: 30px;
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.navLinks li a:hover {
+    color: black;
+    background-color: white;   
+    font-weight: bold;
+}
+
+.logo {
+    min-width: 150px ;
+    width: 150px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    right:12%;
+    top: -65px;
+}
+
+#intro {
+    display: flex;
+    padding: 0px 10%;
+    color: rgb(230, 230, 230);
+    flex-direction: column;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+#intro h1, h2 {
+    padding-top: 0px;
+    border: 0px;
+    margin: 0px;
+    position: relative;
+    top: -90px;
+    right: 10%;
+    align-self: flex-start;
+    
+}
+#intro h2 {
+    font-weight: lighter; 
+}
+
+
+#intro .introduction {
+    max-height: 33px;
+    max-width: 240px;
+    border: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-bottom: auto;
+    list-style: none;
+    position: relative;
+    bottom: -480px;
+    left: 10%;
+    font-size: 14px;
+    
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 300px;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(25, 25, 25);
+}
+
+
+footer {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--main-nav-footer-colors);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+footer .socialMedia {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 2%;
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    justify-content: center ;
+    text-align: center;
+}
+
+footer .socialMedia img {
+    max-width: 50%;
+    height: auto;
+    filter: invert(0.75);
+}
+
+footer .socialMedia img:hover {
+    filter: invert(1);
+}
+
+footer .misc {
+    padding: 10px;
+}
+
+footer h3, h4, h5 {
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+/*.socialMedia figure {
+}
+
+
+.socialMedia ul li {
+    padding-right: 30px;
+    display: inline-block;
+    border: 30px;
+    
+}*/
+
+/*Once width of the screen goes under 992px do this*/
+@media only screen and (max-width: 992px) {
+    .header{
+        padding-right: 0%;
+    }
+
+    #navBar ul li {
+        width: 33%;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #intro .introduction {
+        bottom: -425px; 
+    }
+
+    #intro h1, h2 {
+        top: -145px;
+    }
+
+    .logo {
+        top: -120px;
+    }
+  }
+
+/*Once width of the screen goes under 768px do this*/
+@media only screen and (max-width: 768px) {
+    .header ul li{ /*header has been fixed to the top of the page, 3 links */
+        flex: 1 0 50%;
+
+        border-color: aliceblue;
+        border-style: solid;
+    }
+}
