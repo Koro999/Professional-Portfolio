@@ -6,12 +6,17 @@
 }
 
 html, body{
-    background-color: rgb(16, 16, 16);
-    height: 100%; /*sets the bg color of the webpage*/
+    margin: 0;
+    height: 100%;
+    /*sets the bg color of the webpage*/
     /*padding: 150px 0 0; sets the start of the body */
 }
+
 body {
     background-image: url(/assets/images/Abstract_Texture_Set_v1/Metal_tex3.1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 li, a, a:visited , a:link, a:active{
@@ -19,6 +24,13 @@ li, a, a:visited , a:link, a:active{
     color: var(--main-nav-footer-colors);
     font-size: 14px;
 }
+
+/*hr {
+    position: relative;
+    bottom: 7%;
+    width: 50%;
+    margin: 0 auto;
+}*/
 
 .header{ /*header has been fixed to the top of the page, 3 links */
     display: flex;
@@ -29,9 +41,13 @@ li, a, a:visited , a:link, a:active{
     padding: 20px 10%;
     height: auto;
     max-height: 200px;
+    top:0;
+    margin: 0;
+    border: 0;
 }
 
 .navLinks {
+    
     list-style: none;
     z-index: 9999;
     padding: 0px;
@@ -39,6 +55,7 @@ li, a, a:visited , a:link, a:active{
 }
 
 .header nav ul li {
+    
     padding-right: 30px;
     display: flex;
     display: inline-block;
@@ -50,7 +67,7 @@ li, a, a:visited , a:link, a:active{
     padding: 5px 20px;
     border-radius: 30px;
     background-color: black;
-    cursor: pointer;
+    cursor: default;
 }
 
 .navLinks li a:hover {
@@ -69,7 +86,7 @@ li, a, a:visited , a:link, a:active{
     top: -65px;
 }
 
-#intro {
+#intro{
     display: flex;
     padding: 0px 10%;
     color: rgb(230, 230, 230);
@@ -79,19 +96,23 @@ li, a, a:visited , a:link, a:active{
     margin-right: 10%;
     width: 80%;
     background-color: rgb(0, 0, 0, 0.6);
+
+    min-width: none;
+    text-overflow: ellipsis;
 }
 
-#intro h1, h2 {
+#intro .name, .title {
     padding-top: 0px;
     border: 0px;
     margin: 0px;
     position: relative;
-    top: -90px;
+    top: -85px;
     right: 10%;
     align-self: flex-start;
+
     
 }
-#intro h2 {
+#intro .title {
     font-weight: lighter; 
 }
 
@@ -107,21 +128,140 @@ li, a, a:visited , a:link, a:active{
     position: relative;
     bottom: -50%;
     left: 10%;
-    font-size: 14px;
+    font-size: 14px;   
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
     
 }
 
-.portfolio {
+
+#projects, #illustration {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 300px;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    background-color: rgb(25, 25, 25);
+    align-content: flex-start;
+    flex-flow: wrap;
+    padding: 0px 5%;
+    margin: 0;
+    border: 0;
+    color: rgba(209, 209, 209, 0.6);
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 800px;
+    background-color: rgb(0, 0, 0, 0.6);
+    gap: 1%;
 }
+
+/*
+.card a{
+    position:relative;
+    right: 600px;
+}
+
+.card1 a{
+    position:relative;
+    right: 1785px;
+
+    border-style: dotted;
+    border-color: aquamarine;
+    border-width: 2px; 
+}
+*/
+
+#projects h2, #illustration h2 {
+    color: rgb(230, 230, 230);
+    flex: 1 0 60%;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding: 50px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.card1 {
+    display: flex;
+    flex: 1 0 100%;
+    height: 200px;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: rgba(215, 215, 215, 0.6);
+    filter:brightness(0.3);
+    min-width: 0;
+}
+
+.card { /*Doing this really helps contain and visualize the boxes*/
+    display: flex;
+    flex: 1 0 20%;
+    height: 150px;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: rgba(215, 215, 215, 0.6);
+    filter:brightness(0.3);
+    min-width: 0;
+}
+
+
+#projects .card1 .thumbnail, #illustration .card1 .thumbnail {   
+    height: 100%;
+    width: 30%;
+    flex: 1 0 100%;
+    object-fit: cover;
+    
+}
+
+.card .card-header, .card1 .card-header{
+    margin: 0;
+    border: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 70%;
+    flex: 1 0 20%;
+    align-items: center;
+    color: rgba(215, 215, 215, 0.8);
+    background-color: rgb(0, 0, 0, 0.8);
+    font-weight: lighter;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card p, .card1 p {
+    flex: 1 0 70%;
+    width: auto;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-top: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 14px;
+    font-style: italic;
+}
+
+#projects .card .thumbnail, #illustration .card .thumbnail {   
+    height: 100%;
+    width: 30%;
+    flex: 1 0 100%;
+    object-fit: cover;
+    margin: 0;  
+}
+
+.card:hover, .card1:hover {
+    border-style: solid;
+    border-width: 2px;
+    filter:brightness(1);
+    background: linear-gradient(90deg, rgba(215, 215, 215, 1) 70% , rgba(215, 215, 215, 0.05) 100%);
+    transition: all 0.2s ease 0s;
+}
+
 
 
 footer {
@@ -159,7 +299,7 @@ footer .socialMedia img:hover {
     filter: invert(1);
 }
 
-footer .misc {
+footer #misc {
     padding: 10px;
 }
 
@@ -168,18 +308,6 @@ footer h3, h4, h5 {
     font-weight: lighter;
 }
 
-/*.socialMedia figure {
-}
-
-
-.socialMedia ul li {
-    padding-right: 30px;
-    display: inline-block;
-    border: 30px;
-    
-}*/
-
-/*Once width of the screen goes under 992px do this*/
 @media only screen and (max-width: 992px) {
     .header{
         padding-right: 0%;
@@ -206,14 +334,29 @@ footer h3, h4, h5 {
     .logo {
         top: -120px;
     }
+
+    #intro .name, .title {
+        margin-left: 2%;
+        top: -150px;
+    }
   }
 
 /*Once width of the screen goes under 768px do this*/
 @media only screen and (max-width: 768px) {
     .header ul li{ /*header has been fixed to the top of the page, 3 links */
         flex: 1 0 50%;
-
+    }
+    #intro .name, .title {
+        margin-left: 2%;
+    }
+    .header .navLinks {
+        margin-left: 40%;
+        
+        /*border-width: 2px;
         border-color: aliceblue;
-        border-style: solid;
+        border-style: solid;*/
+    }
+    .card { /*Doing this really helps contain and visualize the boxes*/
+        flex: 1 0 100%;
     }
 }
