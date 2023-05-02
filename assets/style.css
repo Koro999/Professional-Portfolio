@@ -257,7 +257,7 @@ body { /*fixed background image for the portfolio*/
     
 }
 
-#contact { /*formatting the flexbox in these two sections*/
+#contact { /*formatting the flexbox in contact section*/
     display: flex;
     align-content: center;
     justify-content: center;
@@ -274,10 +274,10 @@ body { /*fixed background image for the portfolio*/
     gap: 1%;
 }
 
-#contact h2 {
+#contact h2 { /*adjust header*/
     flex: 1 0 100%;
 }
-#contact img {
+#contact img { /*adjust image*/
     height: 200px;
     width: auto;
 }
