@@ -61,7 +61,7 @@ body { /*fixed background image for the portfolio*/
     cursor: default;
 }
 
-.navLinks.item:hover { /*setting hover properties for navbar links*/
+.navLinks .item:hover { /*setting hover properties for navbar links*/
     color: black;
     background-color: white;   
     font-weight: bold;
@@ -151,12 +151,13 @@ body { /*fixed background image for the portfolio*/
     border-width: 2px; 
 */
 
-#projects h2, #illustration h2 {
+#projects h2, #illustration h2, #contact h2{
     color: rgb(230, 230, 230);
     flex: 1 0 60%;
     font-weight: lighter;
     padding-bottom: 10px;
     padding: 50px;
+    text-align: center;
 
     white-space: nowrap;
     overflow: hidden;
@@ -254,6 +255,31 @@ body { /*fixed background image for the portfolio*/
     background: linear-gradient(90deg, rgba(215, 215, 215, 1) 70% , rgba(215, 215, 215, 0.05) 100%);
     transition: all 0.2s ease 0s;
     
+}
+
+#contact { /*formatting the flexbox in these two sections*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 5%;
+    margin: 0;
+    border: 0;
+    color: rgba(209, 209, 209, 0.6);
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 600px;
+    background-color: rgb(0, 0, 0, 0.6);
+    gap: 1%;
+}
+
+#contact h2 {
+    flex: 1 0 100%;
+}
+#contact img {
+    height: 200px;
+    width: auto;
 }
 
 
