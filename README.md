@@ -17,8 +17,12 @@ is a set number of criteria required to be met in order for this portfolio to sa
 N/A
 
 ## Screenshot 
+Deployed:
 https://github.com/Koro999/Professional-Portfolio
 ![Alt text](/assets/images/Screenshot/127.0.0.1_5500_index.html.png)
+
+Wireframe: 
+![Alt text](/assets/Wireframe/Landing%20Page%20-%20Mobile.png)
 
 ## Usage
 
