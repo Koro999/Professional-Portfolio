@@ -14,10 +14,10 @@
         <header class = "header">
             <nav id = "navBar">
                 <ul class = navLinks>
-                    <li class="item"><a href ="index.html">Home</a></li>
-                    <li class="item"><a href ="#">Projects</a></li>
-                    <li class="item"><a href ="#">Illustrations</a></li>
-                    <li class="item"><a href ="#">Contact</a></li>
+                    <li class="list"><a class="item" href ="index.html">Home</a></li>
+                    <li class="list"><a class="item" href ="#projects">Projects</a></li>
+                    <li class="list"><a class="item" href ="#illustration">Illustrations</a></li>
+                    <li class="list"><a class="item" href ="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>    
@@ -26,8 +26,9 @@
         
         <main id="intro">
             <img class= "logo" src="/assets/images/logo.png" alt="My logo and signature for my art.">
-            <h1>Chris Dang</h1>
-            <h2>Illustrator | Developer</h2>
+            <h1 class = "name">Chris Dang</h1>
+            <h2 class = "title">Illustrator | Developer</h2>
+        
 
                 <summary class = "introduction"> 
                     <p>Welcome to my portfolio.</p>
@@ -36,18 +37,68 @@
                         favorite games, movies, anime & manga. </p>
                     <br>
                     <p>Interested in working together? Let's collaborate!</p>  
-                </summary>             
+                </summary>                      
         </main>
+
+        <span class = "portfolio-container">
+        <main id ="projects"> 
+            <h2>  0.1 &#9632 P R O J E C T S </h2>
+            <article class="card1"> <!--Main container-->
+                <a href="https://github.com/Koro999/Professional-Portfolio"><img class= "thumbnail" src="/assets/images/Thumbnails/Professional Portfolio.png" alt="Screenshot of Professional-Portfolio webpage"></a>
+                <h3 class="card-header">&#9632 [ Portfolio Website ]</h3>
+                <p>HTML,CSS - A professional portfolio website, designed for an Illustrator and Designer.</p>
+                <!--<a href="https://github.com/Koro999/Professional-Portfolio" style="display:block;height:100%;width:100%"></a>-->
+            </article>
+
+
+            <article class="card"> <!--Main container-->
+                <a href="https://github.com/Koro999/CSS-snippets"><img class= "thumbnail" src="/assets/images/Thumbnails/CSS Snippets.png" alt="Screenshot of CSS Snippets webpage"></a>
+                <h3 class="card-header"> &#9632 [ CSS Snippets ]</h3>
+                <p>HTML,CSS - A website that lets the user store CSS snippets in one place. When the code is 
+                    clicked on it is copied to the clipboard.
+                </p>
+                <!--<a href="https://github.com/Koro999/CSS-snippets" style="display:block;height:100%;width:100%"></a>-->
+            </article>
+
+            
+            <article class="card"> <!--Main container-->
+                <a href="https://github.com/Koro999/Module-1-Challenge-Code-Refactoring"><img class= "thumbnail" src="/assets/images/Thumbnails/Refactoring .png" alt=""></a>
+                <h3 class="card-header">&#9632 [ Marketing Company: Code Refactor ]</h3>
+                <p>HTML,CSS - refactoring of a marketing website. It has been optimized and cleaned up. </p>
+                <!--<a href="https://github.com/Koro999/Module-1-Challenge-Code-Refactoring" style="display:block;height:100%;width:100%"></a>-->
+            </article>
+        
+        </main>
+        <main id ="illustration"> 
+            <h2>  0.2 &#9632 I L L U S T R A T I O N</h2>
+            <article class="card1"> <!--Main container-->
+                <a href="https://www.artstation.com/artwork/lxxYkJ" ><img class= "thumbnail" src="https://cdnb.artstation.com/p/assets/images/images/028/296/259/large/chris-dang-concept-piece-loveless-avenue-ff7-2.jpg?1594064712" alt="ff7r:loveless avenue concept art"></a>
+                <h3 class ="card-header" >&#9632 [ Final Fantasy VII: Loveless Avenue ]</h3>
+                <p>Conceptual environment piece done for Final Fantasy VII's Loveless Avenue. </p>
+                <!--<a href="https://www.artstation.com/artwork/lxxYkJ" style="display:block;height:100%;width:100%"></a>--->
+            </article>
+        </main>
+    </span>
+        
+    <span id = "contact">
+        
+        <h2>  0.3 &#9632 C O N T A C T </h2>
+            <article class = "avatar">
+            <img src="/assets/images/Avatar2.png" alt=" it's me ">
+        </article>
+        
+    </span>
+
             <footer>
                 <span class = "socialMedia">
                             <a href="https://www.artstation.com/koro999"><img src="/assets/images/artstation.png" alt="artstation"></a>
                             <a href="https://www.twitch.tv/koro_999"><img src="/assets/images/twitch.png" alt="twitch"></a>
-                            <a href=""><img src="/assets/images/twitter.png" alt="twitter"></a>
-                            <a href=""><img src="/assets/images/instagram.png" alt="instagram"></a>
+                            <a href="https://twitter.com/koro6ix"><img src="/assets/images/twitter.png" alt="twitter"></a>
+                            <a href="https://www.instagram.com/koro_6ix/"><img src="/assets/images/instagram.png" alt="instagram"></a>
                             <a href="https://www.linkedin.com/in/chris-dang-459a151b5/"><img src="/assets/images/linkedin.png" alt="linkedIn"></a>
                 </span>
 
-            <span class = "misc" >
+            <span id = "misc" >
                 <h3>Chris Dang | Illustrator | Developer</h3> <!--email-->
                 <h4>koro.six@gmail.com</h4>
                 <h5>Copyright &#169 Chris Dang 2023. All Rights Reserved.</h5>
