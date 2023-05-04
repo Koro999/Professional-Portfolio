@@ -22,6 +22,7 @@ https://github.com/Koro999/Professional-Portfolio
 ![Alt text](/assets/images/Screenshot/127.0.0.1_5500_index.html.png)
 
 Wireframe: 
+Mobile Format
 ![Alt text](/assets/Wireframe/Landing%20Page%20-%20Mobile.png)
 
 ## Usage
